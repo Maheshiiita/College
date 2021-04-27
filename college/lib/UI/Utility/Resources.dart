@@ -174,6 +174,12 @@ Check School posts to stay updated with school news.''';
 
 //Offers
   static const offers = 'Offers';
+<<<<<<< HEAD
+=======
+
+ //academic calendar
+  static const acad_calendar= 'Academic Calendar';
+>>>>>>> 9bc615f19a64f3c754d55219696271dd1ebd6b85
 }
 
 class assetsString {
