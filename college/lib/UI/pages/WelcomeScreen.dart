@@ -1,55 +1,30 @@
+import 'package:ourESchool/UI/Utility/Resources.dart';
+import 'package:ourESchool/UI/Utility/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:intro_views_flutter/Models/page_view_model.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
-import 'package:college/UI/Utility/constants.dart';
-import 'package:college/UI/Utility/Resources.dart';
-// import 'Login/LoginPage.dart';
+import 'package:ourESchool/core/enums/UserType.dart';
+import 'Login/LoginPage.dart';
 
 class WelcomeScreen extends StatelessWidget {
   static const id = 'WelcomeScreen';
+  static UserType loginType = UserType.STUDENT;
+
   List<PageViewModel> page(BuildContext context) {
     return [
       PageViewModel(
         iconColor: kmainColorTeacher,
-        pageColor: Colors.teal,
+        pageColor: Colors.deepPurple,
         // bubbleBackgroundColor: Colors.white,
         title: Container(),
         body: Column(
           children: <Widget>[
             Text(
-              "Admin",
+             "Your E College",
               style: TextStyle(fontSize: 35, fontWeight: FontWeight.w500),
             ),
             Text(
-              "IIIT Allahabad's Administrative staff",
-              style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.w400),
-            ),
-          ],
-        ),
-        mainImage: Image.asset(
-          assetsString.teacher_welcome,
-          // fit: BoxFit.none,
-          width: MediaQuery.of(context).size.width - 60,
-          alignment: Alignment.center,
-        ),
-        textStyle: TextStyle(color: Colors.white),
-      ),
-      PageViewModel(
-        iconColor: kmainColorStudents,
-        pageColor: kmainColorStudents,
-        // bubbleBackgroundColor: Colors.white,
-        title: Container(),
-        body: Column(
-          children: <Widget>[
-            Text(
-              string.student,
-              style: TextStyle(fontSize: 35, fontWeight: FontWeight.w500),
-            ),
-            Text(
-              "IIIT Allahabad's Students",
+            "IIIT Allahabad",
               style: TextStyle(
                   color: Colors.white70,
                   fontSize: 18.0,
@@ -59,35 +34,6 @@ class WelcomeScreen extends StatelessWidget {
         ),
         mainImage: Image.asset(
           assetsString.student_welcome,
-          // fit: BoxFit.none,
-          width: MediaQuery.of(context).size.width - 60,
-          alignment: Alignment.center,
-        ),
-        textStyle: TextStyle(color: Colors.white),
-      ),
-      PageViewModel(
-        iconColor: kmainColorParents,
-        pageColor: Colors.deepPurple,
-        // bubbleBackgroundColor: Colors.white,
-        title: Container(),
-        body: Column(
-          children: <Widget>[
-            Text(
-              "Faculty",
-              style: TextStyle(fontSize: 35, fontWeight: FontWeight.w500),
-            ),
-            Text(
-              " IIIT Allahabad's Faculty",
-              style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.w400),
-            ),
-          ],
-        ),
-        mainImage: Image.asset(
-          assetsString.parents_welcome,
-          // fit: BoxFit.none,
           width: MediaQuery.of(context).size.width - 60,
           alignment: Alignment.center,
         ),
@@ -106,27 +52,6 @@ class WelcomeScreen extends StatelessWidget {
             onTapDoneButton: null,
             showNextButton: true,
             showBackButton: true,
-            skipText: Text(
-              '↠',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-              ),
-            ),
-            backText: Text(
-              '←',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-              ),
-            ),
-            nextText: Text(
-              '→',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-              ),
-            ),
             showSkipButton: true,
             doneText: Container(),
             pageButtonsColor: Colors.black38,
@@ -146,7 +71,7 @@ class WelcomeScreen extends StatelessWidget {
                 transitionOnUserGestures: true,
                 child: MaterialButton(
                   height: 50,
-                  minWidth: MediaQuery.of(context).size.width -100,
+                  minWidth: MediaQuery.of(context).size.width ,
                   elevation: 10,
                   // shape: RoundedRectangleBorder(
                   //   borderRadius: BorderRadius.only(
@@ -155,18 +80,18 @@ class WelcomeScreen extends StatelessWidget {
                   //   ),
                   // ),
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (BuildContext context) => LoginPage(),
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => LoginPage(),
+                      ),
+                    );
                   },
                   color: Colors.white,
                   child: Text(
                     string.get_started,
                     style: TextStyle(
-                      color: kmainColorTeacher,
+                      color: Colors.black,
                       fontSize: 20,
                     ),
                   ),

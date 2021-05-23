@@ -1,41 +1,42 @@
 {
   "project_info": {
-    "project_number": "105436707082",
-    "project_id": "soe-project-dcb09",
-    "storage_bucket": "soe-project-dcb09.appspot.com"
+    "project_number": "1022745479010",
+    "project_id": "ourapp-9c812",
+    "storage_bucket": "ourapp-9c812.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:105436707082:android:cdae2e79303280b4a9a2f3",
+        "mobilesdk_app_id": "1:1022745479010:android:24fca42a20f8f3af758e3b",
         "android_client_info": {
-          "package_name": "com.example.college"
+          "package_name": "com.ketanchoyal.our_e_school"
         }
       },
       "oauth_client": [
         {
-          "client_id": "105436707082-1411q2tv71sv1sqfgegl1uinekrkuipj.apps.googleusercontent.com",
+          "client_id": "1022745479010-3co6shl1vpdfa7i68he38murlgvt9uji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ketanchoyal.our_e_school",
+            "certificate_hash": "15fc5b5f3d6630868ee9ef94f73d1e9f7c7d9527"
+          }
+        },
+        {
+          "client_id": "1022745479010-hl46q6kjg1r3uiigu1cin46t0o097aha.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCqReG_TIJEnfEyFhfxWnqLpfJeIlfFkkA"
+          "current_key": "AIzaSyCB53hr0UGDU_SPzQRaLVCpo_Vz1OCuA6c"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "105436707082-1411q2tv71sv1sqfgegl1uinekrkuipj.apps.googleusercontent.com",
+              "client_id": "1022745479010-hl46q6kjg1r3uiigu1cin46t0o097aha.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "105436707082-77c27si14haueiss4s43uic3mdmd0tg5.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.college"
-              }
             }
           ]
         }

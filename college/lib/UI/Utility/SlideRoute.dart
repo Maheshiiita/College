@@ -10,7 +10,7 @@ class RouteTransition extends PageRouteBuilder {
     this.fade = true,
     this.duration,
   }) : super(
-            pageBuilder: (BuildContext context, Animation<double> animation,
+            pageBuilder: ( BuildContext context, Animation<double> animation,
                 Animation<double> secondaryAnimation) {
               return widget;
             },
