@@ -49,7 +49,9 @@ android {
     }
 
     lintOptions {
+        checkReleaseBuilds false
         disable 'InvalidPackage'
+        disable 'MissingTranslation'
     }
 
     defaultConfig {
