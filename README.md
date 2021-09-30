@@ -41,7 +41,7 @@ Can announce anything Using a global Post clicking on plus button on dashboard
 
 Can upload Academic Calendar
 
-Can Upload Assignments
+Can Upload Assignmentsmjjn
 
 
 Can view all students
