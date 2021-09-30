@@ -62,6 +62,6 @@ Settings->logout
 Developers Profile
 Settings->About!
 Profile
-Settings ->Profile
+Settings ->Profiles
 Password Change
 Settings->Forgot Password
